@@ -1,237 +1,227 @@
-/** Basic Portfolio **/
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* settings for main document */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    background-color: #fff;
-    border-color: #ddd;
-    color: #777;
-    text-align: center;
-    margin: 0;
-    padding: 0;  
-}
-/* page content setup */
-.container {
-    width:960px;
-    margin: 10px auto;
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-/* 
-firstline {
-    border-color: #ccc;
-    background-color: purple; */
-    /* padding: 20px; */
-/* } */
-
-/* headings setup */
-h1, h2, h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: Bold;
+  background: url('../images/memphis-colorful.png') repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: auto;
+  color: #777777;
 }
 
-h1 {
-    background-color: #4aaaa5;
-    color:white;
-    font-size: 24px;
-    font-style: Bold;
-    float: left;
-    padding: 20px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4aaaa5;
+  font-weight: bold;
 }
 
-h2 {
-    clear: both;
-    color: #4aaaa5;
-    font-size: 22px;
-    font-style: bold;
-    background-color: #fff;
-    border-bottom: 2px solid #ddd;
-    margin: 0px 20px 20px 0px;
-    padding: 20px 20px 10px 20px;
+header {
+  background: white;
+  border-bottom: 3px solid #ccc;
+  margin-bottom: 30px;
 }
 
-h3 {
-    clear: both;
-    color: #4aaaa5;
-    font-size: 18px;
-    background-color: white;
-    padding: 20px 20px 10px 20px;
-    border-bottom: 2px solid #ddd;
+header h1 {
+  background: #4aaaa5;
+  color: white;
+  display: inline-block;
+  padding: 30px;
+  font-size: 30px;
 }
 
-/* font for Portfolio labels */
-h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #4aaaa5;
-    color: white;
-    width: 270px;
-    height: 30px;
-    font-style: bold;
-    line-height: 1.5;
-    text-align: center;
-    padding: 5px;
-    position: absolute;
-    margin-left: 10px;
-    top: 160px;
-}
-
-/* navigation */
 nav {
-    font-size: 14px;
-    color: #888;
-    float: right;
-    padding: 20px;
-    width: 270px;
+  width: 280px;
+  float:right;
+  margin-top: 35px;
+  text-align: center;
 }
 
-/* main layout for About me and Contact page sections */
-#aboutme {
-    clear: both;
-    width: 630px;
-    float: left;
-    margin-bottom: 20px;
-    padding: 20px; 
-    overflow: inline;
-    background-color: #fff;
-    text-align: left;
+
+nav ul li {
+  display: inline;
 }
 
-/* main layout for Portfolio page sections */
-#portfolio {
-    clear: both;
-    width: 630px;
-    height: 760px;
-    float: left;
-    margin-bottom: 20px;
-    padding: 20px; 
-    overflow: inline;
-    background-color: #fff;
-    text-align: left;
+nav a {
+  color: #333;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-right: 2px solid #4aaaa5;
+  text-decoration: none;
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
 }
 
-/* Connect Me layout */
-aside {
-    overflow: inline;
-    float: left;
-    margin-left: 20px;
-    padding: 20px;
-    width: 270px;
-    height: 175px;
-    border: 1px #fff;
-    background-color: #fff;
+nav ul li:last-child a {
+  border-right: none;
+  padding-right: none;
 }
 
-/* Photo layout */
-img {
-    float: left;
-    margin: 0px 10px 10px 10px;
-    background-color: #fff;
+nav a:hover {
+  background: #4aaaa5;
+  color: white;
 }
 
-/* Layout for Social icons */
-#social {
-    padding: 20px 10px 20px 10px;
-    margin: 0px;
-}
-
-/* Text Layout for About me section */
 p {
-    display: inline;
-    line-height: 1.5;
-    overflow: auto;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 
-/* Contact form: Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 570px; /* Partial width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    /* Margin-left: 20px; */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    /* float: left; */
+label {
+  font-size: 18px;
+  display:block;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #4aaaa5;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    /* float: left; */
+input, textarea {
+  width: 100%;
+  display: block;
+  margin: 5px 0 20px 0;
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: teal;
-    clear: both;
+textarea {
+  height: 300px;
 }
 
-/* form width and alignment */
-form {
-    width: 630px;
-    text-align: left;
-
+form button {
+  background: #4aaaa5;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: none;
 }
 
-/* Portfolio Images */
-
-#photo1 {
-    position: relative;
-    width: 100%;    
-}
-
-#photo2 {
-    position: absolute;
-    top: 190px;
-    margin-left: 300px;
-    width: 100%;  
-    overflow: inline; 
-}
-
-#photo3 {
-    position: absolute;
-    top: 410px; 
-}
-
-#photo4 {
-    position: absolute;
-    top: 410px;
-    margin-left: 300px;
-    width: 100%;  
-    overflow: inline; 
-}
-
-#photo5 {
-    position: absolute;
-    top: 630px;
-}
-
-/* footer missing top border */
 footer {
-    width: 960px;
-    display: inline-block;
-    clear: both;
-    position: center;
-    bottom: 0;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #666;
-    color: white;
-    text-align:center;
-    border-top-color: #4aaaa5 20px;
+  background: #666;
+  border-top: 5px solid #4aaaa5;
+  color: #ccc;
+  text-align: center;
+  padding: 40px;
+  margin-top: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
- 
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.inline-img {
+  float:left;
+  margin: 0 15px 15px 0;
+  border: 1px solid #777777;
+}
+
+.portfolio-item {
+  position: relative; 
+  margin-bottom: 20px;
+  width: 45%;
+  float:left;
+  height: 250px;
+}
+
+.portfolio-item:nth-of-type(even) {
+  float: right;
+}
+
+.portfolio-item h4 {
+  background: #4aaaa5;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+}
+
+.clearfix {
+  display: block;
+  clear: both; 
+  margin-bottom: 130px;
+}
+
+#left-column, #right-column {
+  background: white;
+  padding: 25px;
+  border: 2px solid #ccc;
+}
+
+#left-column {
+  width: 650px;
+  float: left;
+}
+
+#left-column h2 {
+  font-size: 24px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+#right-column {
+  width: 270px;
+  float: right;
+}
+
+#right-column h3 {
+  font-size: 20px;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+#right-column ul {
+  text-align: center;
+}
+
+#right-column ul li {
+  display: inline-block;
+}
+
+#right-column ul li img {
+  width: 60px;
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+}
+
+#right-column ul li img:hover {
+  transform: rotate(360deg) scale(1.1);
+
+}
+
+#port1 {
+  background: url('../images/port1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port2 {
+  background: url('../images/port2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port3 {
+  background: url('../images/port3.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port4 {
+  background: url('../images/port4.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port5 {
+  background: url('../images/port5.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#port6 {
+  background: url('../images/port6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
