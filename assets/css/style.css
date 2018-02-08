@@ -9,7 +9,12 @@ body {
   color: #777777;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: purple;
   font-weight: bold;
@@ -31,11 +36,10 @@ header h1 {
 
 nav {
   width: 280px;
-  float:right;
+  float: right;
   margin-top: 35px;
   text-align: center;
 }
-
 
 nav ul li {
   display: inline;
@@ -70,10 +74,11 @@ p {
 
 label {
   font-size: 18px;
-  display:block;
+  display: block;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   display: block;
   margin: 5px 0 20px 0;
@@ -96,7 +101,7 @@ form button {
 }
 
 footer {
-  background:#D9BECA;
+  background: #D9BECA;
   border-top: 5px solid purple;
   color: #333;
   text-align: center;
@@ -113,16 +118,16 @@ footer {
 }
 
 .inline-img {
-  float:left;
+  float: left;
   margin: 0 15px 15px 0;
   border: 1px solid #777777;
 }
 
 .portfolio-item {
-  position: relative; 
+  position: relative;
   margin-bottom: 20px;
   width: 45%;
-  float:left;
+  float: left;
   height: 250px;
 }
 
@@ -142,11 +147,12 @@ footer {
 
 .clearfix {
   display: block;
-  clear: both; 
+  clear: both;
   margin-bottom: 130px;
 }
 
-#left-column, #right-column {
+#left-column,
+#right-column {
   background: white;
   padding: 25px;
   border: 2px solid #ccc;
@@ -192,7 +198,6 @@ footer {
 
 #right-column ul li img:hover {
   transform: rotate(360deg) scale(1.1);
-
 }
 
 #port1 {
@@ -200,26 +205,31 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #port2 {
   background: url('../images/port2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #port3 {
-  background: url('../images/port3.jpg') ;
+  background: url('../images/port3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #port4 {
-  background: url('../images/port4.jpg') ;
+  background: url('../images/port4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #port5 {
-  background: url('../images/port5.jpg') ;
+  background: url('../images/port5.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 #port6 {
   background: url('../images/port6.jpg');
   background-size: cover;
@@ -230,17 +240,16 @@ footer {
   These rules take effect when the browser's width
   is either 768px or less.
 */
+
 @media screen and (max-width: 980px) {
   /* The body's bg color will be #333 */
   body {
     background-color: #333;
   }
-
   /* The wrapper's width will be 600px */
   .wrapper {
     width: 600px;
   }
-
   #main-content,
   #sidebar {
     /* Box-model */
@@ -250,53 +259,108 @@ footer {
     margin: 30px 0;
   }
 }
+
 /* Width at 980px and below */
+
 @media screen and (max-width: 768px) {
   body {
-    background-color: #333;
-  }
-
-  .wrapper {
-    /* Box-model */
+  h1 {
     width: 100%;
-    padding: 20px;
+    text-align: center;
   }
-
-  #main-content,
-  #sidebar {
+  
+  header {
+    background-color: #fff;
+  }
+  nav {
     width: 100%;
+
+  }
+  /* Need to fix code to space nav across the page for phone */
+
+  nav a {
+    padding: 10px 30px;
+    border-right: none;
   }
 
-  #sidebar {
-    margin-top: 40px;
-  }
+.wrapper {
+  /* Box-model */
+  width: 100%;
+  padding: 20px;
+}
+
+#left-column,
+#right-column {
+  width: 100%;
+}
+
+#left-column {
+  margin-top: 20px;
+}
+
+#left-column img {
+  width: 100%
+}
+
+#right-column {
+  margin-top: 20px;
+}
+
+.portfolio-item {
+  width: 100%
+}
+
 }
 
 /* Additional Screen Sizes */
 
-
 /* Width at 640px and below */
+
 @media screen and (max-width: 640px) {
-  body {
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
   
+  header {
+    background-color: #fff;
   }
-
-  nav ul li {
-    float: center;
-  }
-
-  .wrapper {
-    /* Box-model */
+  nav {
     width: 100%;
-    padding: 20px;
+
+  }
+  /* Need to fix code to space nav across the page for phone */
+
+  nav a {
+    padding: 10px 30px;
+    border-right: none;
   }
 
-  #left-column,
-  #right-column {
-    width: 100%;
-  }
+.wrapper {
+  /* Box-model */
+  width: 100%;
+  padding: 20px;
+}
 
-  #left-column {
-    margin-top: 40px;
-  }
+#left-column,
+#right-column {
+  width: 100%;
+}
+
+#left-column {
+  margin-top: 20px;
+}
+
+#left-column img {
+  width: 100%
+}
+
+#right-column {
+  margin-top: 20px;
+}
+
+.portfolio-item {
+  width: 100%
+}
+
 }
