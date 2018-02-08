@@ -243,9 +243,9 @@ footer {
 
 @media screen and (max-width: 980px) {
   /* The body's bg color will be #333 */
-  body {
+  /* body {
     background-color: #333;
-  }
+  } */
   /* The wrapper's width will be 600px */
   .wrapper {
     width: 600px;
@@ -263,20 +263,11 @@ footer {
 /* Width at 980px and below */
 
 @media screen and (max-width: 768px) {
-  #right-column {
+  body {
+
+  nav {
     width: 100%;
-    margin-top: 20px;
-  }
-    
-
-  
- 
-
-#left-column,
-#right-column {
-  width: 100%;
-}
-}
+ }
 
 /* Additional Screen Sizes */
 
@@ -295,7 +286,6 @@ footer {
     width: 100%;
 
   }
-  /* Need to fix code to space nav across the page for phone */
 
   nav a {
     padding: 10px 30px;
@@ -326,7 +316,6 @@ footer {
 }
 
 .portfolio-item {
-  width: 100%
+  width: 100%;
 }
-
 }
