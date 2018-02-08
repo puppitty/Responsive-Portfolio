@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url('../images/pink_rice.png') repeat;
+  background: url('../images/pink_rice.png..') repeat;
   font-family: Arial, Helvetica, sans-serif;
   overflow: auto;
   color: #777777;
@@ -11,7 +11,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #4aaaa5;
+  color: purple;
   font-weight: bold;
 }
 
@@ -22,7 +22,7 @@ header {
 }
 
 header h1 {
-  background: #4aaaa5;
+  background: purple;
   color: white;
   display: inline-block;
   padding: 30px;
@@ -45,7 +45,7 @@ nav a {
   color: #333;
   font-size: 18px;
   padding: 5px 15px;
-  border-right: 2px solid #4aaaa5;
+  border-right: 2px solid purple;
   text-decoration: none;
   transition-duration: .5s;
   transition-property: all;
@@ -58,7 +58,7 @@ nav ul li:last-child a {
 }
 
 nav a:hover {
-  background: #4aaaa5;
+  background: purple;
   color: white;
 }
 
@@ -87,7 +87,7 @@ textarea {
 }
 
 form button {
-  background: #4aaaa5;
+  background: purple;
   color: #fff;
   padding: 10px 20px;
   margin: 10px 0;
@@ -96,11 +96,11 @@ form button {
 }
 
 footer {
-  background: #666;
-  border-top: 5px solid #4aaaa5;
-  color: #ccc;
+  background:#D9BECA;
+  border-top: 5px solid purple;
+  color: #333;
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   margin-top: 30px;
   position: fixed;
   bottom: 0;
@@ -131,7 +131,7 @@ footer {
 }
 
 .portfolio-item h4 {
-  background: #4aaaa5;
+  background: purple;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -224,4 +224,79 @@ footer {
   background: url('../images/port6.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 980px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: #333;
+  }
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 600px;
+  }
+
+  #main-content,
+  #sidebar {
+    /* Box-model */
+    width: 100%;
+    float: none;
+    padding: 30px;
+    margin: 30px 0;
+  }
+}
+/* Width at 980px and below */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Additional Screen Sizes */
+
+
+/* Width at 640px and below */
+@media screen and (max-width: 640px) {
+  body {
+  
+  }
+
+  nav ul li {
+    float: center;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #left-column,
+  #right-column {
+    width: 100%;
+  }
+
+  #left-column {
+    margin-top: 40px;
+  }
 }
