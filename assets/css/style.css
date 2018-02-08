@@ -275,6 +275,14 @@ footer {
   #right-column {
     width: 100%;
   }
+  .portfolio-item {
+    position: relative;
+    margin-bottom: 20px;
+    width: 45%;
+    float: left;
+    height: 250px;
+  }
+  
 }
 
 /* Additional Screen Sizes */
