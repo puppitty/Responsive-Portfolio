@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url('../images/pink_rice.png..') repeat;
+  background: url('../../assets/images/pink_rice.png') repeat;
   font-family: Arial, Helvetica, sans-serif;
   overflow: auto;
   color: #777777;
